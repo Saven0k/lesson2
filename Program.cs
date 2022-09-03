@@ -1,12 +1,15 @@
-﻿// 16. Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
-// 5, 25 -> да
-// -4, 16 -> да
-// 25, 5 -> да
-// 8,9 -> нет
+﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
 Console.Clear();
-Console.WriteLine("Введите первое число");
-int a = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите второе число");
-int b = int.Parse(Console.ReadLine());
-if (a*a == b) Console.WriteLine($"Число {b} являеться квадратом числа {a}");
-else Console.WriteLine($"Число {b}  не являеться квадратом числа {a}");
+Console.WriteLine("Введите трехзначное число: ");
+int number = int.Parse(Console.ReadLine());
+if(number > 99 & number < 1000)
+{
+    int a = number / 10;
+    int b = a % 10;
+    Console.WriteLine($"{number} -> {b}");
+    
+}
+else Console.WriteLine("Число не трехзначное");
