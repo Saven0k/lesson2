@@ -8,5 +8,5 @@ Console.WriteLine("Введите первое число");
 int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int b = int.Parse(Console.ReadLine());
-if (a*a == b) Console.WriteLine($"Число {b} являеться квадратом числа {a}");
+if ((a*a == b) | (b*b== a)) Console.WriteLine($"Число {b} являеться квадратом числа {a}");
 else Console.WriteLine($"Число {b}  не являеться квадратом числа {a}");
